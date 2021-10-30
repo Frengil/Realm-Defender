@@ -9,7 +9,7 @@ public class EnemyMovement : MonoBehaviour{
     [Range(0,5)]
     float speed = 1;
 
-    private void Start() {
+    private void OnEnable() {
         findPath();
         beamToFirstWaypoint();
         StartCoroutine(moveOnPath());
@@ -27,7 +27,7 @@ public class EnemyMovement : MonoBehaviour{
                 yield return new WaitForEndOfFrame();
             }           
         }
-        GameObject.Destroy(gameObject);
+        gameObject.SetActive(false);
     }
 
     void findPath() {
