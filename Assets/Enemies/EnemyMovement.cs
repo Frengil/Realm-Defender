@@ -10,10 +10,12 @@ public class EnemyMovement : MonoBehaviour{
     float speed = 1;
 
     private void Start() {
-        StartCoroutine(printPath());
+        findPath();
+        beamToFirstWaypoint();
+        StartCoroutine(moveOnPath());
     }
 
-    IEnumerator printPath() {
+    IEnumerator moveOnPath() {
         foreach(Waypoint wp in path) {
             Vector3 startPosition = this.transform.position;
             Vector3 endPosition = wp.transform.position;
@@ -23,9 +25,20 @@ public class EnemyMovement : MonoBehaviour{
                 travelPercent += Time.deltaTime*speed;
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
                 yield return new WaitForEndOfFrame();
-            }
-           
-
+            }           
         }
+        GameObject.Destroy(gameObject);
+    }
+
+    void findPath() {
+        path.Clear();
+        GameObject[] waypoints = GameObject.FindGameObjectsWithTag("Path");
+        foreach(GameObject waypoint in waypoints) {
+            path.Add(waypoint.GetComponent<Waypoint>());
+        }
+    }
+
+    void beamToFirstWaypoint() {
+        transform.position = path[0].transform.position;
     }
 }
