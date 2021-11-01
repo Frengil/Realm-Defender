@@ -10,12 +10,12 @@ public class Waypoint : MonoBehaviour{
     }
 
     [SerializeField]
-    private GameObject tower;
+    private Tower tower;
 
     private void OnMouseDown() {       
         if (isPlaceable) {
-            Instantiate(tower, transform.position, Quaternion.identity);
-            isPlaceable = false;
+            bool placed=tower.createTower(tower,transform.position);            
+            isPlaceable = !placed;
         }
     }
 }
