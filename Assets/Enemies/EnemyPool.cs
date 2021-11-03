@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class EnemyPool : MonoBehaviour{
     [SerializeField]
+    [Range(.1f,30)]
     private float spawntime = 1f;
     [SerializeField]
     private GameObject enemyPrefab;
     [SerializeField]
+    [Range(0, 50)]
     int poolSize = 5;
     private GameObject[] pool;
 

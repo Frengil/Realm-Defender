@@ -4,6 +4,8 @@ using TMPro;
 using UnityEngine;
 
 [ExecuteAlways]
+
+[RequireComponent(typeof(TextMeshPro))]
 public class TileLabel : MonoBehaviour{
     [SerializeField]
     Color defaultColor = Color.white;
