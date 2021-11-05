@@ -43,7 +43,8 @@ public class TileLabel : MonoBehaviour{
         label.text = coordinates.ToString();
         if (gridManager == null) {
             return;
-        }                
+        }
+        setLabelColor();
     }
 
     void updateTileName() {
