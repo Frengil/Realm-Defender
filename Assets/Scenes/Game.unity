@@ -10580,7 +10580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startCoordinate: {x: 0, y: 1}
-  destinationCoordinate: {x: 10, y: 5}
+  destinationCoordinate: {x: 17, y: 13}
 --- !u!4 &517172884 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4482762324263023186, guid: 05a8fc562e663eb448fea7960fef6f5b,

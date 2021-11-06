@@ -58,13 +58,12 @@ public class TileLabel : MonoBehaviour{
         }
         if (!node.isWalkable) {
             label.color = blockedColor;
-        }
-        else if (node.isExplored) {
+        } else if (node.isPath) {
+            label.color = pathColor;
+        } else if (node.isExplored) {
             label.color = exploredColor;
         }
-        else if (node.isPath) {
-            label.color = pathColor;
-        } else {
+       else {
             label.color = defaultColor;
         }
     }
