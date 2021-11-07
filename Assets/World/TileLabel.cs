@@ -37,9 +37,12 @@ public class TileLabel : MonoBehaviour{
         displayCoordinates();
     }
 
-    void displayCoordinates() {        
-        coordinates.x = Mathf.RoundToInt(transform.parent.position.x / UnityEditor.EditorSnapSettings.move.x);
-        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / UnityEditor.EditorSnapSettings.move.z);      
+    void displayCoordinates() {
+        if (gridManager == null) {
+            return;
+        }
+        coordinates.x = Mathf.RoundToInt(transform.parent.position.x /gridManager.UnityGridSize.x);
+        coordinates.y = Mathf.RoundToInt(transform.parent.position.z / gridManager.UnityGridSize.y);      
         label.text = coordinates.ToString();
         if (gridManager == null) {
             return;
