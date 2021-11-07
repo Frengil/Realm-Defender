@@ -39,6 +39,14 @@ public class GridManager : MonoBehaviour {
         }
     }
 
+    public void resetNodes() {
+        foreach(KeyValuePair<Vector2Int,Node> entry in grid) {
+            entry.Value.connectedTo = null;
+            entry.Value.isExplored = false;
+            entry.Value.isPath = false;
+        }
+    }
+
     public Vector2Int getCoordinatesFromPosition(Vector3 position) {
         return  new Vector2Int(
          Mathf.RoundToInt(position.x / unityGridSize.x),

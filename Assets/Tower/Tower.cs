@@ -15,9 +15,7 @@ public class Tower : MonoBehaviour{
     }
 
     public bool createTower(Tower tower,Vector3 position) {
-        bank = FindObjectOfType<Bank>();
-        print(bank);
-        print(bank.currentBalance);
+        bank = FindObjectOfType<Bank>();        
         if (bank != null) {
             if (bank.currentBalance >= cost) {
                 Instantiate(tower, position, Quaternion.identity);
