@@ -9,8 +9,10 @@ public class Pathfinder : MonoBehaviour{
 
     [SerializeField]
     Vector2Int startCoordinate;
+    public Vector2Int StartCoordinate { get { return startCoordinate; } }
     [SerializeField]
     Vector2Int destinationCoordinate;
+    public Vector2Int DestinationCoordinate { get { return destinationCoordinate; } }
 
     Queue<Node> frontier = new Queue<Node>();
     Dictionary<Vector2Int, Node> reached = new Dictionary<Vector2Int, Node>();
@@ -21,15 +23,17 @@ public class Pathfinder : MonoBehaviour{
     GridManager gridManager;
     void Awake(){
         gridManager = FindObjectOfType<GridManager>();
+       
         if (gridManager != null) {
             grid = gridManager.Grid;
+            startNode = grid[startCoordinate];          
+            destinationNode = grid[destinationCoordinate];
         }
        
     }
 
     private void Start() {
-        startNode = grid[startCoordinate];
-        destinationNode = grid[destinationCoordinate];
+       
         getNewPath();
 
 
@@ -58,6 +62,8 @@ public class Pathfinder : MonoBehaviour{
     }
 
     void breadthFirstSearch() {
+        startNode.isWalkable = true;
+        destinationNode.isWalkable = true;
         gridManager.resetNodes();
         frontier.Clear();
         reached.Clear();

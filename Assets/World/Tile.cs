@@ -7,9 +7,11 @@ public class Tile : MonoBehaviour{
     private bool isPlaceable;
     GridManager gridManager;
     Vector2Int coordinates = new Vector2Int();
+    Pathfinder pathfinder;
 
     private void Awake() {
         gridManager = FindObjectOfType<GridManager>();
+        pathfinder = FindObjectOfType<Pathfinder>();
     }
 
     private void Start() {
@@ -28,9 +30,13 @@ public class Tile : MonoBehaviour{
     private Tower tower;
 
     private void OnMouseDown() {       
-        if (isPlaceable) {
-            bool placed=tower.createTower(tower,transform.position);            
-            isPlaceable = !placed;
+        if (gridManager.getNode(coordinates).isWalkable&&
+            !pathfinder.willBlockPath(coordinates)) {
+            bool placed=tower.createTower(tower,transform.position);
+            if (placed) {
+                isPlaceable = !placed;
+                gridManager.blockNode(coordinates);
+            }
         }
     }
 }

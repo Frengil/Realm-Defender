@@ -479,6 +479,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5309979961069650350, guid: ccca5a740efa0664392d596464af4d58,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592775738917639462, guid: ccca5a740efa0664392d596464af4d58,
         type: 3}
       propertyPath: m_RootOrder
@@ -591,6 +596,11 @@ PrefabInstance:
       propertyPath: m_text
       value: (4, 3)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
       propertyPath: m_RootOrder
@@ -665,6 +675,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5004966445030676603, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6321890902810660083, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -1650,6 +1665,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
@@ -3376,6 +3396,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 621328103875309778, guid: 996ed7993bad4954e82f4074f26538e0,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1896453738201375829, guid: 996ed7993bad4954e82f4074f26538e0,
         type: 3}
       propertyPath: m_Name
@@ -4502,6 +4527,11 @@ PrefabInstance:
       propertyPath: m_text
       value: (1, 1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
       propertyPath: m_RootOrder
@@ -5592,6 +5622,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
@@ -6966,6 +7001,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5309979961069650350, guid: ccca5a740efa0664392d596464af4d58,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592775738917639462, guid: ccca5a740efa0664392d596464af4d58,
         type: 3}
       propertyPath: m_RootOrder
@@ -8852,6 +8892,11 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
       propertyPath: m_RootOrder
@@ -9233,6 +9278,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5309979961069650350, guid: ccca5a740efa0664392d596464af4d58,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592775738917639462, guid: ccca5a740efa0664392d596464af4d58,
         type: 3}
       propertyPath: m_RootOrder
@@ -13729,6 +13779,11 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
       propertyPath: m_RootOrder
@@ -13897,6 +13952,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_text
       value: (3, 3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
@@ -14565,6 +14625,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
@@ -16170,6 +16235,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5004966445030676603, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6321890902810660083, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -18128,6 +18198,11 @@ PrefabInstance:
       propertyPath: m_text
       value: (0, 1)
       objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
       propertyPath: m_RootOrder
@@ -19633,6 +19708,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 621328103875309778, guid: 996ed7993bad4954e82f4074f26538e0,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1896453738201375829, guid: 996ed7993bad4954e82f4074f26538e0,
         type: 3}
       propertyPath: m_Name
@@ -22287,6 +22367,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 621328103875309778, guid: 996ed7993bad4954e82f4074f26538e0,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1896453738201375829, guid: 996ed7993bad4954e82f4074f26538e0,
         type: 3}
       propertyPath: m_Name
@@ -24011,6 +24096,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
@@ -25841,6 +25931,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5309979961069650350, guid: ccca5a740efa0664392d596464af4d58,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592775738917639462, guid: ccca5a740efa0664392d596464af4d58,
         type: 3}
       propertyPath: m_RootOrder
@@ -26819,6 +26914,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5309979961069650350, guid: ccca5a740efa0664392d596464af4d58,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592775738917639462, guid: ccca5a740efa0664392d596464af4d58,
         type: 3}
       propertyPath: m_RootOrder
@@ -27147,6 +27247,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429863398065167165, guid: 4e0848bd0d0de1246abf4ea374197bfc,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8490065246027370421, guid: 4e0848bd0d0de1246abf4ea374197bfc,
         type: 3}
@@ -27854,6 +27959,11 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
       propertyPath: m_RootOrder
@@ -27923,6 +28033,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5004966445030676603, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6321890902810660083, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -29608,6 +29723,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5004966445030676603, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6321890902810660083, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
         type: 3}
       propertyPath: m_RootOrder
@@ -31179,6 +31299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gridSize: {x: 20, y: 20}
+  unityGridSize: {x: 10, y: 10}
 --- !u!4 &1628145737
 Transform:
   m_ObjectHideFlags: 0
@@ -32897,6 +33018,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 621328103875309778, guid: 996ed7993bad4954e82f4074f26538e0,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1896453738201375829, guid: 996ed7993bad4954e82f4074f26538e0,
         type: 3}
       propertyPath: m_Name
@@ -34728,6 +34854,11 @@ PrefabInstance:
       propertyPath: m_fontColor.r
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
       propertyPath: m_RootOrder
@@ -34997,6 +35128,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 621328103875309778, guid: 996ed7993bad4954e82f4074f26538e0,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1896453738201375829, guid: 996ed7993bad4954e82f4074f26538e0,
         type: 3}
       propertyPath: m_Name
@@ -35983,6 +36119,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5309979961069650350, guid: ccca5a740efa0664392d596464af4d58,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592775738917639462, guid: ccca5a740efa0664392d596464af4d58,
         type: 3}
       propertyPath: m_RootOrder
@@ -39639,6 +39780,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5309979961069650350, guid: ccca5a740efa0664392d596464af4d58,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6592775738917639462, guid: ccca5a740efa0664392d596464af4d58,
         type: 3}
       propertyPath: m_RootOrder
@@ -40280,6 +40426,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColor.r
       value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7356659525713664268, guid: f342654c92ddfc449aa3faf66e2fe43c,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8419183607463546244, guid: f342654c92ddfc449aa3faf66e2fe43c,
         type: 3}
@@ -41533,6 +41684,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 814997406}
     m_Modifications:
+    - target: {fileID: 5004966445030676603, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
+        type: 3}
+      propertyPath: isPlaceable
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6321890902810660083, guid: 0dad4131b19f64147bfdeb2c8950b4f4,
         type: 3}
       propertyPath: m_RootOrder

@@ -4,15 +4,21 @@ using UnityEngine;
 
 [RequireComponent(typeof(Enemy))]
 public class EnemyMovement : MonoBehaviour{
-    [SerializeField]
-    List<Tile> path = new List<Tile>();
+    List<Node> path = new List<Node>();
     [SerializeField]
     [Range(0,5)]
     float speed = 1;
     Enemy enemy;
 
-    private void Start() {
+    Pathfinder pathfinder;
+    GridManager gridManager;
+
+
+
+    private void Awake() {
         enemy = GetComponent<Enemy>();
+        pathfinder = FindObjectOfType<Pathfinder>();
+        gridManager = FindObjectOfType<GridManager>();
     }
 
     private void OnEnable() {
@@ -22,9 +28,11 @@ public class EnemyMovement : MonoBehaviour{
     }
 
     IEnumerator moveOnPath() {
-        foreach(Tile wp in path) {
+
+        for (int i= 0;i< path.Count; i++){ 
+        
             Vector3 startPosition = this.transform.position;
-            Vector3 endPosition = wp.transform.position;
+            Vector3 endPosition = gridManager.getPositionFromCoordinates(path[i].coordinates);
             float travelPercent = 0f;
             transform.LookAt(endPosition);
             while (travelPercent < 1) {
@@ -32,19 +40,13 @@ public class EnemyMovement : MonoBehaviour{
                 transform.position = Vector3.Lerp(startPosition, endPosition, travelPercent);
                 yield return new WaitForEndOfFrame();
             }           
+        
         }
         finishPath();
     }
 
     void findPath() {
-        path.Clear();
-        GameObject parent = GameObject.FindGameObjectWithTag("Path");
-        foreach(Transform child in parent.transform) {
-            Tile waypoint = child.GetComponent<Tile>();
-            if (waypoint != null) {
-                path.Add(waypoint);
-            }
-        }
+        path = pathfinder.getNewPath();
     }
 
     void finishPath() {
@@ -53,6 +55,6 @@ public class EnemyMovement : MonoBehaviour{
     }
 
     void beamToFirstWaypoint() {
-        transform.position = path[0].transform.position;
+        transform.position = gridManager.getPositionFromCoordinates(pathfinder.StartCoordinate);
     }
 }
