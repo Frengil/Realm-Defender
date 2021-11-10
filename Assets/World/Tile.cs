@@ -35,7 +35,9 @@ public class Tile : MonoBehaviour{
             bool placed=tower.createTower(tower,transform.position);
             if (placed) {
                 isPlaceable = !placed;
+                
                 gridManager.blockNode(coordinates);
+                pathfinder.notifyReceivers();
             }
         }
     }

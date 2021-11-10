@@ -22,14 +22,14 @@ public class EnemyMovement : MonoBehaviour{
     }
 
     private void OnEnable() {
-        findPath();
         beamToFirstWaypoint();
-        StartCoroutine(moveOnPath());
+        recalculatePath(true);     
+      
     }
 
     IEnumerator moveOnPath() {
 
-        for (int i= 0;i< path.Count; i++){ 
+        for (int i=1;i< path.Count; i++){ 
         
             Vector3 startPosition = this.transform.position;
             Vector3 endPosition = gridManager.getPositionFromCoordinates(path[i].coordinates);
@@ -45,8 +45,17 @@ public class EnemyMovement : MonoBehaviour{
         finishPath();
     }
 
-    void findPath() {
-        path = pathfinder.getNewPath();
+    public void recalculatePath(bool resetPath) {       
+        Vector2Int coordinates = new Vector2Int();
+        if (resetPath) {
+            coordinates = pathfinder.StartCoordinate;
+        }else {
+            coordinates = gridManager.getCoordinatesFromPosition(transform.position);
+        }
+        StopAllCoroutines();
+        path.Clear();
+        path = pathfinder.getNewPath(coordinates);
+        StartCoroutine(moveOnPath());
     }
 
     void finishPath() {

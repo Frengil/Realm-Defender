@@ -39,9 +39,13 @@ public class Pathfinder : MonoBehaviour{
 
     }
 
-    public List<Node> getNewPath() {
-        breadthFirstSearch();
-        return  buildPath();
+    public List<Node> getNewPath() {       
+        return getNewPath(startCoordinate);
+    }
+    public List<Node> getNewPath(Vector2Int coordinates ) {
+        gridManager.resetNodes();
+        breadthFirstSearch(coordinates);
+        return buildPath();
     }
 
     void exploreNeighbors() {
@@ -61,15 +65,15 @@ public class Pathfinder : MonoBehaviour{
         }
     }
 
-    void breadthFirstSearch() {
+    void breadthFirstSearch(Vector2Int coordinates) {
         startNode.isWalkable = true;
         destinationNode.isWalkable = true;
         gridManager.resetNodes();
         frontier.Clear();
         reached.Clear();
         bool isRunning = true;
-        frontier.Enqueue(startNode);
-        reached.Add(startCoordinate, startNode);
+        frontier.Enqueue(grid[coordinates]);
+        reached.Add(coordinates, grid[coordinates]);
         while (frontier.Count > 0 && isRunning) {
             currentSearchNode = frontier.Dequeue();
             currentSearchNode.isExplored = true;
@@ -79,6 +83,14 @@ public class Pathfinder : MonoBehaviour{
             }
 
         }
+    }
+
+
+    public void notifyReceivers() {
+        EnemyMovement[] m = FindObjectsOfType<EnemyMovement>();
+        foreach(EnemyMovement em in m) {
+            em.recalculatePath(false);
+        }        
     }
 
     List<Node> buildPath() {
