@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8766830522794668520}
   - component: {fileID: 5871892048899492002}
   - component: {fileID: 6942470985609866294}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: mesh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 1734762714465748812}
   - component: {fileID: 2180767064990707967}
   - component: {fileID: 6509579299870306773}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Label
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,8 +269,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   defaultColor: {r: 1, g: 1, b: 1, a: 1}
   blockedColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+  exploredColor: {r: 0, g: 0, b: 1, a: 1}
+  pathColor: {r: 1, g: 0, b: 0, a: 1}
   label: {fileID: 2180767064990707967}
-  waypoint: {fileID: 3241202685867960026}
 --- !u!1 &4482762324263023197
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,7 +283,7 @@ GameObject:
   - component: {fileID: 4482762324263023186}
   - component: {fileID: 3241202685867960026}
   - component: {fileID: 1065255143704986614}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tile
   m_TagString: Untagged
   m_Icon: {fileID: 0}
